@@ -2,129 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
 
-    <!-- ===== CSS ===== -->
-    <style>
-        body {
-            margin: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: #f4f6f8;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #007cf0, #00dfd8);
-            color: white;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 3rem;
-        }
-
-        .header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .section {
-            background: white;
-            margin-top: 30px;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
-        }
-
-        h2 {
-            color: #007cf0;
-            margin-top: 0;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin: 8px 0;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 25px;
-            background: #007cf0;
-            color: white;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .btn:hover {
-            background: #005fcc;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            color: #777;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <div class="header">
+    <header class="header">
         <h1>My Portfolio</h1>
         <p>Welcome to my personal website</p>
-        <button class="btn" onclick="showMessage()">Say Hello</button>
-    </div>
+        <button class="btn" onclick="sayHello()">Say Hello</button>
+    </header>
 
-    <div class="container">
-        <div class="section">
+    <main class="container">
+
+        <section class="card">
             <h2>About Me</h2>
             <p>
-                I am a <strong>DevOps Engineer</strong> learning Git, Jenkins, and Docker.
-                I enjoy automating workflows and building CI/CD pipelines.
+                I am a motivated learner with interest in technology, automation,
+                and modern tools. I enjoy building projects and continuously
+                improving my skills.
             </p>
-        </div>
+        </section>
 
-        <div class="section">
+        <section class="card">
+            <h2>Skills & Tools</h2>
+            <ul>
+                <li>Git — Version control</li>
+                <li>GitHub — Code hosting & collaboration</li>
+                <li>Jenkins — CI/CD automation</li>
+                <li>Docker — Containerization</li>
+                <li>Ansible — Configuration management</li>
+                <li>Terraform — Infrastructure as Code</li>
+                <li>SonarQube — Code quality analysis</li>
+                <li>Nexus — Artifact repository</li>
+                <li>Prometheus — Monitoring & metrics</li>
+                <li>Grafana — Visualization dashboards</li>
+                <li>Linux — Server administration</li>
+            </ul>
+        </section>
+
+        <section class="card">
             <h2>Projects</h2>
             <ul>
-                <li><strong>CI/CD Pipeline</strong> — Automated build & deployment</li>
-                <li><strong>Docker Deployment</strong> — Containerized web apps</li>
+                <li>Automation workflows and CI/CD pipelines</li>
+                <li>Container-based application deployments</li>
+                <li>Monitoring and alerting setups</li>
             </ul>
-        </div>
-    </div>
+        </section>
+
+        <section class="card">
+            <h2>Experience</h2>
+            <ul>
+                <li>Hands-on experience with tools through labs and projects</li>
+                <li>Built and deployed applications using containers</li>
+                <li>Comfortable working in Linux environments</li>
+            </ul>
+        </section>
+
+    </main>
 
     <footer>
         © 2026 My Portfolio
     </footer>
 
-    <!-- ===== JavaScript ===== -->
-    <script>
-        function showMessage() {
-            alert("Hello! Thanks for visiting my portfolio 🚀");
-        }
-    </script>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
